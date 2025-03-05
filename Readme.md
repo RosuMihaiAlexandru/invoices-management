@@ -1,25 +1,25 @@
 # Invoices Management
 
-This is a full-stack invoices management application built with Nest.js for the backend and React with Vite for the frontend. The application utilizes Prisma as an ORM for PostgreSQL and runs the database inside a Docker container.
+This is a full-stack invoices management application built with Nest.js for the Sever and React with Vite for the client. The application utilizes Prisma as an ORM for PostgreSQL and runs the database inside a Docker container.
 
 ## Technologies Used
 
-### Backend:
+### Sever:
 - **Nest.js** - A progressive Node.js framework
 - **Prisma** - ORM for PostgreSQL
 - **Docker** - Containerized PostgreSQL database
 - **Jest/Vitest** - For testing
 
-### Frontend:
+### client:
 - **React** - UI framework
 - **Vite** - Fast build tool for React
 
 ## Getting Started
 
-### Backend Setup
-1. Navigate to the backend directory:
+### Sever Setup
+1. Navigate to the Sever directory:
    ```sh
-   cd backend
+   cd sever
    ```
 2. Install dependencies:
    ```sh
@@ -37,21 +37,21 @@ This is a full-stack invoices management application built with Nest.js for the 
    ```sh
    npm run seed
    ```
-6. Start the backend server:
+6. Start the Sever server:
    ```sh
    npm run start:dev
    ```
 
-### Frontend Setup
-1. Navigate to the frontend directory:
+### Front-end Setup
+1. Navigate to the client directory:
    ```sh
-   cd frontend
+   cd client
    ```
 2. Install dependencies:
    ```sh
    npm install
    ```
-3. Start the frontend application:
+3. Start the client application:
    ```sh
    npm run dev
    ```
