@@ -5,17 +5,43 @@ const prisma = new PrismaClient();
 
 async function main() {
   // Create 5 test users
-  const users = [];
-  for (let i = 0; i < 5; i++) {
-    const user = await prisma.user.create({
+  const users = [
+    await prisma.user.create({
       data: {
-        email: faker.internet.email(),
-        password: faker.internet.password(),
-        name: faker.person.fullName(),
+        email: 'admin@mail.com',
+        password: 'password123',
+        name: 'Admin User',
       },
-    });
-    users.push(user);
-  }
+    }),
+    await prisma.user.create({
+      data: {
+        email: 'user1@mail.com',
+        password: 'password123',
+        name: 'Test User 1',
+      },
+    }),
+    await prisma.user.create({
+      data: {
+        email: 'user2@mail.com',
+        password: 'password123',
+        name: 'Test User 2',
+      },
+    }),
+    await prisma.user.create({
+      data: {
+        email: 'user3@mail.com',
+        password: 'password123',
+        name: 'Test User 3',
+      },
+    }),
+    await prisma.user.create({
+      data: {
+        email: 'user4@mail.com',
+        password: 'password123',
+        name: 'Test User 4',
+      },
+    }),
+  ];
 
   // Create 50 invoices
   for (let i = 0; i < 50; i++) {
